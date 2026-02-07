@@ -1,3 +1,5 @@
+import logo from "../assets/ArjunTeelaLogo.png";
+
 export default function Footer() {
   return (
     <footer className="bg-black text-white/70 py-16">
@@ -5,10 +7,21 @@ export default function Footer() {
         {/* Brand */}
         <div className="md:col-span-2">
           <div className="flex items-center gap-3 text-white mb-6">
-            <span className="material-symbols-outlined text-primary text-4xl">
-              temple_hindu
-            </span>
-            <h2 className="serif-heading text-2xl font-bold">Heritage Haven</h2>
+            <img
+              src={logo}
+              alt="Arjun Teela Logo"
+              className="h-12 w-12 object-contain"
+            />
+
+            {/* Wordmark */}
+            <div className="flex flex-col leading-tight">
+              <span className="serif-heading text-xl font-bold tracking-wide">
+                Arjun Teela
+              </span>
+              <span className="text-[11px] uppercase tracking-[0.2em] text-gray-500">
+                Royal Villa Retreat
+              </span>
+            </div>
           </div>
 
           <p className="max-w-md mb-8 leading-relaxed">
