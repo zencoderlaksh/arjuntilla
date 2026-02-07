@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import logo from "../assets/ArjunTeelaLogo.png";
 
 export default function Navbar() {
   return (
@@ -6,12 +7,21 @@ export default function Navbar() {
       <div className="max-w-[1280px] mx-auto px-6 lg:px-20 py-4 flex items-center justify-between">
         {/* Brand */}
         <NavLink to="/" className="flex items-center gap-2">
-          <span className="material-symbols-outlined text-primary text-3xl leading-none">
-            temple_hindu
-          </span>
-          <span className="serif-heading text-2xl font-bold tracking-tight">
-            Heritage Haven
-          </span>
+          <img
+            src={logo}
+            alt="Arjun Teela Logo"
+            className="h-12 w-12 object-contain"
+          />
+
+          {/* Wordmark */}
+          <div className="flex flex-col leading-tight">
+            <span className="serif-heading text-xl font-bold tracking-wide">
+              Arjun Teela
+            </span>
+            <span className="text-[11px] uppercase tracking-[0.2em] text-gray-500">
+              Royal Villa Retreat
+            </span>
+          </div>
         </NavLink>
 
         {/* Links */}

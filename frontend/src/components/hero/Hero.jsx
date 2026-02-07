@@ -2,7 +2,7 @@ import HeroSearch from "./HeroSearch";
 
 export default function Hero() {
   return (
-    <section className="relative h-[90vh] min-h-[600px] w-full overflow-hidden">
+    <section className="relative h-[90vh] min-h-[600px] w-full ">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
