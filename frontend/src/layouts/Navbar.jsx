@@ -34,7 +34,7 @@ export default function Navbar() {
               }`
             }
           >
-            The Villa
+            The Villa's
           </NavLink>
 
           <NavLink
